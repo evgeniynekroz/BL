@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PusiaBold";
+  src: url("https://link.brawlstars.com/fonts/game/game-pl-ru-tr.woff?v=u0u6bt0") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  font-family: "PusiaBold", Arial, sans-serif;
+}
+
+.game-title,
+.game-copy,
+.claim-button {
+  text-shadow:
+    0 -1px #000,
+    0 0 #000,
+    0 1px #000,
+    0 2px #000,
+    -1px -1px #000,
+    1px -1px #000,
+    1px 0 #000,
+    -1px 0 #000,
+    1px 1px #000,
+    -1px 1px #000,
+    1px 2px #000,
+    -1px 2px #000;
+}
+
+.claim-button {
+  border: none;
+  background: transparent url("https://link.brawlstars.com/images/game/button-gold.svg?v=u0u6bt0")
+    center / 100% 100% no-repeat;
+  transform: skew(-7deg);
+}
+
+.claim-button-text {
+  display: block;
+  padding: 0 8px 8px;
+  transform: skew(7deg);
+}
+
+.logo-float {
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+.modal-fade {
+  animation: modalFade 180ms ease-out;
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
